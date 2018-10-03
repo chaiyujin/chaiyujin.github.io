@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>results.md</title>
+<title>Tacotron2 results</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -387,8 +387,17 @@ blockquote {
 <body>
 <h2 id="information">Information</h2>
 <ul>
-<li>My net was trained <strong>68,000</strong> batches with size <strong>32</strong></li>
-<li>Rathmen's trained <strong>189,000</strong> batches with size <strong>16</strong></li>
+<li>My frontend was trained <strong>88,000</strong> batches with size <strong>32</strong></li>
+<li>Rathmen's was trained <strong>189,000</strong> batches with size <strong>16</strong></li>
+<li>Use the <strong>same</strong> wavenet backend to generate audio from audio features infered by fronends.</li>
+</ul>
+<h2 id="comments">Comments</h2>
+<ul>
+<li><a href="#11">Text#11</a> Word 'is' is not clear in my result.</li>
+<li><a href="#14">Text#14</a> My result is right and stress on capital 'PROBLEM' and 'SOLUTION'. Rathmen's is incorrect.</li>
+<li><a href="#21">Text#21</a> Both fails to say 'HipHop' clearly.</li>
+<li><a href="#25">Text#25</a> My result is worse than Rathmen's</li>
+<li><a href="#28">Text#28</a> My result pronounce second 'would' better.</li>
 </ul>
 <h2 id="results">Results</h2>
 <table>
@@ -401,157 +410,157 @@ blockquote {
 </thead>
 <tbody>
 <tr>
-<td>Scientists at the CERN laboratory say they have discovered a new particle.</td>
+<td><text id=0>0. Scientists at the CERN laboratory say they have discovered a new particle.</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_0.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_0.wav"></audio></td>
 </tr>
 <tr>
-<td>There's a way to measure the acute emotional intelligence that has never gone out of style.</td>
+<td><text id=1>1. There's a way to measure the acute emotional intelligence that has never gone out of style.</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_1.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_1.wav"></audio></td>
 </tr>
 <tr>
-<td>President Trump met with other leaders at the Group of 20 conference.</td>
+<td><text id=2>2. President Trump met with other leaders at the Group of 20 conference.</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_2.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_2.wav"></audio></td>
 </tr>
 <tr>
-<td>The Senate's bill to repeal and replace the Affordable Care Act is now imperiled.</td>
+<td><text id=3>3. The Senate's bill to repeal and replace the Affordable Care Act is now imperiled.</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_3.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_3.wav"></audio></td>
 </tr>
 <tr>
-<td>Generative adversarial network or variational auto-encoder.</td>
+<td><text id=4>4. Generative adversarial network or variational auto-encoder.</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_4.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_4.wav"></audio></td>
 </tr>
 <tr>
-<td>Basilar membrane and otolaryngology are not auto-correlations.</td>
+<td><text id=5>5. Basilar membrane and otolaryngology are not auto-correlations.</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_5.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_5.wav"></audio></td>
 </tr>
 <tr>
-<td>He has read the whole thing.</td>
+<td><text id=6>6. He has read the whole thing.</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_6.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_6.wav"></audio></td>
 </tr>
 <tr>
-<td>He reads books.</td>
+<td><text id=7>7. He reads books.</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_7.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_7.wav"></audio></td>
 </tr>
 <tr>
-<td>Don't desert me here in the desert!</td>
+<td><text id=8>8. Don't desert me here in the desert!</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_8.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_8.wav"></audio></td>
 </tr>
 <tr>
-<td>He thought it was time to present the present.</td>
+<td><text id=9>9. He thought it was time to present the present.</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_9.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_9.wav"></audio></td>
 </tr>
 <tr>
-<td>Thisss isrealy awhsome.</td>
+<td><text id=10>10. Thisss isrealy awhsome.</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_10.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_10.wav"></audio></td>
 </tr>
 <tr>
-<td>Punctuation sensitivity, is working.</td>
+<td><text id=11>11. Punctuation sensitivity, is working.</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_11.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_11.wav"></audio></td>
 </tr>
 <tr>
-<td>Punctuation sensitivity is working.</td>
+<td><text id=12>12. Punctuation sensitivity is working.</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_12.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_12.wav"></audio></td>
 </tr>
 <tr>
-<td>The buses aren't the problem, they actually provide a solution.</td>
+<td><text id=13>13. The buses aren't the problem, they actually provide a solution.</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_13.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_13.wav"></audio></td>
 </tr>
 <tr>
-<td>The buses aren't the PROBLEM, they actually provide a SOLUTION.</td>
+<td><text id=14>14. The buses aren't the PROBLEM, they actually provide a SOLUTION.</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_14.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_14.wav"></audio></td>
 </tr>
 <tr>
-<td>The quick brown fox jumps over the lazy dog.</td>
+<td><text id=15>15. The quick brown fox jumps over the lazy dog.</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_15.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_15.wav"></audio></td>
 </tr>
 <tr>
-<td>Does the quick brown fox jump over the lazy dog?</td>
+<td><text id=16>16. Does the quick brown fox jump over the lazy dog?</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_16.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_16.wav"></audio></td>
 </tr>
 <tr>
-<td>Peter Piper picked a peck of pickled peppers. How many pickled peppers did Peter Piper pick?</td>
+<td><text id=17>17. Peter Piper picked a peck of pickled peppers. How many pickled peppers did Peter Piper pick?</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_17.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_17.wav"></audio></td>
 </tr>
 <tr>
-<td>She sells sea-shells on the sea-shore. The shells she sells are sea-shells I'm sure.</td>
+<td><text id=18>18. She sells sea-shells on the sea-shore. The shells she sells are sea-shells I'm sure.</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_18.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_18.wav"></audio></td>
 </tr>
 <tr>
-<td>The blue lagoon is a nineteen eighty American romance adventure film.</td>
+<td><text id=19>19. The blue lagoon is a nineteen eighty American romance adventure film.</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_19.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_19.wav"></audio></td>
 </tr>
 <tr>
-<td>Tajima Airport serves Toyooka.</td>
+<td><text id=20>20. Tajima Airport serves Toyooka.</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_20.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_20.wav"></audio></td>
 </tr>
 <tr>
-<td>Talib Kweli confirmed to AllHipHop that he will be releasing an album in the next year.</td>
+<td><text id=21>21. Talib Kweli confirmed to AllHipHop that he will be releasing an album in the next year.</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_21.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_21.wav"></audio></td>
 </tr>
 <tr>
-<td>the rest being provided with barrack beds, and in dimensions varying from thirty feet by fifteen to fifteen feet by ten.</td>
+<td><text id=22>22. the rest being provided with barrack beds, and in dimensions varying from thirty feet by fifteen to fifteen feet by ten.</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_22.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_22.wav"></audio></td>
 </tr>
 <tr>
-<td>in giltspur street compter, where he was first lodged.</td>
+<td><text id=23>23. in giltspur street compter, where he was first lodged.</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_23.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_23.wav"></audio></td>
 </tr>
 <tr>
-<td>a man named burnett came with his wife and took up his residence at whitchurch, hampshire, at no great distance from laverstock,</td>
+<td><text id=24>24. a man named burnett came with his wife and took up his residence at whitchurch, hampshire, at no great distance from laverstock,</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_24.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_24.wav"></audio></td>
 </tr>
 <tr>
-<td>it appears that oswald had only one caller in response to all of his fpcc activities,</td>
+<td><text id=25>25. it appears that oswald had only one caller in response to all of his fpcc activities,</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_25.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_25.wav"></audio></td>
 </tr>
 <tr>
-<td>he relied on the absence of the strychnia.</td>
+<td><text id=26>26. he relied on the absence of the strychnia.</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_26.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_26.wav"></audio></td>
 </tr>
 <tr>
-<td>scoggins thought it was lighter.</td>
+<td><text id=27>27. scoggins thought it was lighter.</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_27.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_27.wav"></audio></td>
 </tr>
 <tr>
-<td>would, it is probable, have eventually overcome the reluctance of some of the prisoners at least,     and would have possessed so much moral dignity</td>
+<td><text id=28>28. would, it is probable, have eventually overcome the reluctance of some of the prisoners at least,     and would have possessed so much moral dignity</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_28.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_28.wav"></audio></td>
 </tr>
 <tr>
-<td>the only purpose of this whole sentence is to evaluate the scalability of the model for very long sentences.     This is not even a long sentence anymore, it has become an entire paragraph.     Should I stop now? Let's add this last sentence in which we talk about nothing special.</td>
+<td><text id=29>29. the only purpose of this whole sentence is to evaluate the scalability of the model for very long sentences.     This is not even a long sentence anymore, it has become an entire paragraph.     Should I stop now? Let's add this last sentence in which we talk about nothing special.</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_29.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_29.wav"></audio></td>
 </tr>
 <tr>
-<td>Thank you so much for your support!!</td>
+<td><text id=30>30. Thank you so much for your support!!</text></td>
 <td><audio controls="" preload="none"><source src="my_results/pred_30.wav"></audio></td>
 <td><audio controls="" preload="none"><source src="rathmen/pred_30.wav"></audio></td>
 </tr>
