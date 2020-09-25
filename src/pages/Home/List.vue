@@ -1,7 +1,7 @@
 <template>
   <v-row justify="center" >
     <v-col class="shrink">
-      <div style="min-width: 800px; max-width:1024px;">
+      <div style="max-width:1024px;">
         <div style="display: flex;">
           <v-icon>fas fa-list</v-icon>
           <h2 style="margin-left: 10px;">Projects</h2>
@@ -34,8 +34,7 @@
 export default {
   data: () => ({
     items: [
-      {src: '/sdfa.html', title: 'Speech-Driven Facial Animation with Spectral Gathering and Temporal Attention'},
-      {src: '/sdfa.html', title: 'Speech-Driven Facial Animation with Spectral Gathering and Temporal Attention'},
+      {src: '/sdfa.html', title: 'Speech-Driven Facial Animation with Spectral Gathering and Temporal Attention'}
     ]
   }),
 }
