@@ -22,7 +22,7 @@ module.exports = {
       entry: 'src/pages/SDFA/main.js',
       template: 'public/index.html',
       filename: 'sdfa.html',  // output as dist/sdfa.html
-      title: 'Speech-driven Facial Animation',
+      title: 'Speech-Driven Facial Animation with Spectral Gathering and Temporal Attention',
       chunks: ['chunk-vendors', 'chunk-common', 'sdfa']
     },
   }

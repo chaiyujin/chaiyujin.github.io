@@ -1,7 +1,7 @@
 <template>
   <v-row justify="center" >
-    <v-col class="shrink">
-      <div :style="'max-width:800px; font-size: ' + page_scale  + 'em'">
+    <v-col>
+      <div :style="'max-width:800px; margin: 0 auto; font-size: ' + page_scale  + 'em'">
         <div class="post-header">
           <h1 class="post-title">
             Speech-Driven Facial Animation <br/> with Spectral Gathering and Temporal Attention

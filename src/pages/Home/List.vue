@@ -1,7 +1,7 @@
 <template>
   <v-row justify="center" >
-    <v-col class="shrink">
-      <div style="max-width:1024px;">
+    <v-col>
+      <div style="max-width:1024px; margin: 0 auto;">
         <div style="display: flex;">
           <v-icon>fas fa-list</v-icon>
           <h2 style="margin-left: 10px;">Projects</h2>
