@@ -34,7 +34,8 @@
 export default {
   data: () => ({
     items: [
-      {src: '/sdfa.html', title: 'Speech-Driven Facial Animation with Spectral Gathering and Temporal Attention'}
+      {src: '/sdfa.html', title: 'Speech-Driven Facial Animation with Spectral Gathering and Temporal Attention'},
+      // {src: '/psfa.html', title: 'Personalized Speech-Driven 3D Facial Animation via Style-Content Disentanglement'},
     ]
   }),
 }

@@ -25,5 +25,13 @@ module.exports = {
       title: 'Speech-Driven Facial Animation with Spectral Gathering and Temporal Attention',
       chunks: ['chunk-vendors', 'chunk-common', 'sdfa']
     },
+    // personalized
+    psfa: {
+      entry: 'src/pages/PSFA/main.js',
+      template: 'public/index.html',
+      filename: 'psfa.html',  // output as dist/psfa.html
+      title: 'Personalized Speech-Driven 3D Facial Animation via Style-Content Disentanglement',
+      chunks: ['chunk-vendors', 'chunk-common', 'psfa']
+    },
   }
 }
