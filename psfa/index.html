@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@200;300;400;500;600&family=Encode+Sans+Semi+Condensed:wght@400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/css/academicons.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/all.min.css">
+    <link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/my_style.css">
+    
+    
+    
+    <title>CYJ&#39;s Blog | Personalized Audio-Driven 3D Facial Animation via Style-Content Disentanglement</title>
+    <meta name="description" content="Supplementary Video Part1 Part2 Part3 Overview &amp; Method Your browser doesn&rsquo;t support embedded videos, but don&rsquo;t worry, you can download it and watch it with your favorite video player! Comparison &amp; Results Your browser doesn&rsquo;t support embedded videos, but don&rsquo;t worry, you can download it and watch it with your favorite video player! Ablation &amp; Misc Your browser doesn&rsquo;t support embedded videos, but don&rsquo;t worry, you can download it and watch it with your favorite video player!">
+</head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" role="button" href="https://chaiyujin.github.io/">
+            
+            <i class="fa fa-home"></i>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0"><li class='nav-item '>
+                    <a class="nav-link" href="/projects/"> Research Projects</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/garden/"> Blogs</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/about/"> About</a>
+                </li>
+             
+            <li class="nav-item px-2 pt-1">
+                <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</nav><div id="content">
+
+<div class="container" style="max-width: 800px;">
+    <div class="py-2 rounded-3">
+        <div class="container-fluid py-2">
+            <h1 class="display-2 mb-2 text-center">Personalized Audio-Driven 3D Facial Animation via Style-Content Disentanglement</h1>
+        </div>
+
+        <p class="text-center author serif">
+        
+        
+        
+        <span class="me">Yujin Chai</span><span><sup>1</sup>, </span>
+        
+        
+        
+        <span class="">Tianjia Shao</span><span><sup>1</sup>, </span>
+        
+        
+        
+        <span class="">Yanlin Weng</span><span><sup>1</sup>, </span>
+        
+        
+        
+        and <span class="">Kun Zhou</span><sup>1</sup>
+        
+        
+        
+        </p>
+
+        
+        
+        <p class="text-center institution serif">1&nbsp&nbsp State Key Lab of CAD&amp;CG, Zhejiang University, China</p>
+        
+        
+
+        <div class="text-center pt-1">
+            
+            
+            <a href="https://ieeexplore.ieee.org/abstract/document/9992151" role="button" class="btn btn-sm btn-link mx-2" target="_blank">
+                <i class="ai ai-ieee"></i>
+            IEEE TVCG
+            </a>
+            
+            
+        </div>
+    </div>
+    <div class="row justify-content-center mb-2">
+        <div class="col-12">
+            <p class="card-date m-0">
+                Published:
+                
+                
+                    19 Dec, 2022
+                
+            </p>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-sm-12" style="text-align: right;">
+                
+                    
+                    <span class="badge tag-badge">speech-driven</span>
+                    
+                    <span class="badge tag-badge">facial animation</span>
+                    
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div>
+        <div class="serif main-content">
+            <h3 id="post-front-matter">Abstract</h3>
+            <p style="text-align: justify;">We present a learning-based approach for generating 3D facial animations with the motion style of a specific subject from arbitrary audio inputs. The subject style is learned from a video clip (1-2 minutes) either downloaded from the Internet or captured through an ordinary camera. Traditional methods often require many hours of the subject&#39;s video to learn a robust audio-driven model and are thus unsuitable for this task. Recent research efforts aim to train a model from video collections of a few subjects but ignore the discrimination between the subject style and underlying speech content within facial motions, leading to inaccurate style or articulation. To solve the problem, we propose a novel framework that disentangles subject-specific style and speech content from facial motions. The disentanglement is enabled by two novel training mechanisms. One is two-pass style swapping between two random subjects, and the other is joint training of the decomposition network and audio-to-motion network with a shared decoder. After training, the disentangled style is combined with arbitrary audio inputs to generate stylized audio-driven 3D facial animations. Compared with start-of-the-art methods, our approach achieves better results qualitatively and quantitatively, especially in difficult cases like bilabial plosive and bilabial nasal phonemes.</p>
+        </div>
+    </div>
+
+    
+    <div>
+        <div class="serif main-content">
+            <h3 id="supplementary-video">Supplementary Video</h3>
+<nav>
+	<div class="nav nav-tabs" id="nav-tab" role="tablist">
+
+		
+		
+		
+		
+
+		
+
+		<a class="nav-link  active "
+		   id="efabdc-tab" data-bs-toggle="tab" data-bs-target="#efabdc"
+		   type="button" role="tab" aria-controls="nav-home" aria-selected="true">Part1</a>
+
+		
+
+		<a class="nav-link "
+		   id="bcfaed-tab" data-bs-toggle="tab" data-bs-target="#bcfaed"
+		   type="button" role="tab" aria-controls="nav-home" aria-selected="true">Part2</a>
+
+		
+
+		<a class="nav-link "
+		   id="caebdf-tab" data-bs-toggle="tab" data-bs-target="#caebdf"
+		   type="button" role="tab" aria-controls="nav-home" aria-selected="true">Part3</a>
+
+		
+
+	</div>
+</nav>
+
+<div class="tab-content" id="nav-tab-content">
+
+	
+
+
+
+
+
+
+<div class="tab-pane fade show active " id="efabdc" role="tabpanel" aria-labelledby="nav-1">
+
+	<strong>Overview &amp; Method</strong>
+<video controls preload="auto" width="100%"  playsinline class="html-video">
+<source src="/psfa/supp_video-p1-overview.mp4" type="video/mp4">
+<span>Your browser doesn&rsquo;t support embedded videos, but don&rsquo;t worry, you can <a href="/psfa/supp_video-p1-overview.mp4">download it</a> and watch it with your favorite video player!</span>
+</video>
+
+</div>
+
+
+
+
+
+
+<div class="tab-pane fade show " id="bcfaed" role="tabpanel" aria-labelledby="nav-1">
+
+	<strong>Comparison &amp; Results</strong>
+<video controls preload="auto" width="100%"  playsinline class="html-video">
+<source src="/psfa/supp_video-p2-cmp_results.mp4" type="video/mp4">
+<span>Your browser doesn&rsquo;t support embedded videos, but don&rsquo;t worry, you can <a href="/psfa/supp_video-p2-cmp_results.mp4">download it</a> and watch it with your favorite video player!</span>
+</video>
+
+</div>
+
+
+
+
+
+
+<div class="tab-pane fade show " id="caebdf" role="tabpanel" aria-labelledby="nav-1">
+
+	<strong>Ablation &amp; Misc</strong>
+<video controls preload="auto" width="100%"  playsinline class="html-video">
+<source src="/psfa/supp_video-p3-ablation_misc.mp4" type="video/mp4">
+<span>Your browser doesn&rsquo;t support embedded videos, but don&rsquo;t worry, you can <a href="/psfa/supp_video-p3-ablation_misc.mp4">download it</a> and watch it with your favorite video player!</span>
+</video>
+
+</div>
+
+
+
+</div>
+<h3 id="citation">Citation</h3>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bibtex" data-lang="bibtex"><span style="display:flex;"><span><span style="color:#75af00">@article</span><span style="color:#111">{</span><span style="color:#111">chai2022personalized</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75af00">title</span><span style="color:#111">=</span><span style="color:#d88200">{Personalized Audio-Driven 3D Facial Animation Via Style-Content Disentanglement}</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75af00">author</span><span style="color:#111">=</span><span style="color:#d88200">{Chai, Yujin and Shao, Tianjia and Weng, Yanlin and Zhou, Kun}</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75af00">journal</span><span style="color:#111">=</span><span style="color:#d88200">{IEEE Transactions on Visualization and Computer Graphics}</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75af00">year</span><span style="color:#111">=</span><span style="color:#d88200">{2022}</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75af00">publisher</span><span style="color:#111">=</span><span style="color:#d88200">{IEEE}</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div>
+        </div>
+    </div>
+
+</div>
+
+
+        </div><div class="container">
+    <div class="row justify-content-between">
+        <div class="col-sm-4">
+            <p class="footer">Yujin Chai © 2023 </p>
+        </div>
+        <div class="col-sm-6 d-flex flex-row-reverse">
+            
+            <a class="footer-social px-2"  href="https://github.com/chaiyujin" target="_blank"><i class="fab fa-github"></i></a>
+            
+        </div>
+    </div>
+</div>
+<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script src="/js/isotope.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="/js/dark.js"></script>
+<script src="/js/isotope.js"></script>
+<script src="/js/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script></body>
+</html>

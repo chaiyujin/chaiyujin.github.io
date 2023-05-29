@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@200;300;400;500;600&family=Encode+Sans+Semi+Condensed:wght@400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/css/academicons.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/all.min.css">
+    <link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/my_style.css">
+    
+    
+    
+    <title>CYJ&#39;s Blog | Speech-Driven Facial Animation with Spectral Gathering and Temporal Attention</title>
+    <meta name="description" content="Example of markdown syntax you can use to edit your content">
+</head><body><nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" role="button" href="https://chaiyujin.github.io/">
+            
+            <i class="fa fa-home"></i>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0"><li class='nav-item '>
+                    <a class="nav-link" href="/projects/"> Research Projects</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/garden/"> Blogs</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/about/"> About</a>
+                </li>
+             
+            <li class="nav-item px-2 pt-1">
+                <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</nav><div id="content">
+
+<div class="container" style="max-width: 800px;">
+    <div class="py-2 rounded-3">
+        <div class="container-fluid py-2">
+            <h1 class="display-2 mb-2 text-center">Speech-Driven Facial Animation with Spectral Gathering and Temporal Attention</h1>
+        </div>
+
+        <p class="text-center author serif">
+        
+        
+        
+        <span class="me">Yujin Chai</span><span><sup>1</sup>, </span>
+        
+        
+        
+        <span class="">Yanlin Weng</span><span><sup>1</sup>, </span>
+        
+        
+        
+        <span class="">Lvdi Wang</span><span><sup>2</sup>, </span>
+        
+        
+        
+        and <span class="">Kun Zhou</span><sup>1</sup>
+        
+        
+        
+        </p>
+
+        
+        
+        <p class="text-center institution serif">1&nbsp&nbsp State Key Lab of CAD&amp;CG, Zhejiang University, China</p>
+        
+        <p class="text-center institution serif">2&nbsp&nbsp FaceUnity Technology Inc., China</p>
+        
+        
+
+        <div class="text-center pt-1">
+            
+            
+            <a href="https://link.springer.com/article/10.1007/s11704-020-0133-7" role="button" class="btn btn-sm btn-link mx-2" target="_blank">
+                <i class="ai ai-springer ai-1x"></i>
+            Springer FCS
+            </a>
+            
+            <a href="https://github.com/chaiyujin/sdfa-2019" role="button" class="btn btn-sm btn-link mx-2" target="_blank">
+                <i class="fab alt brands fa-github"></i>
+            Code
+            </a>
+            
+            
+        </div>
+    </div>
+    <div class="row justify-content-center mb-2">
+        <div class="col-12">
+            <p class="card-date m-0">
+                Published:
+                
+                
+                    27 Sep, 2021
+                
+            </p>
+            <hr class="dropdown-divider">
+            <div class="row justify-content-between">
+                <div class="col-sm-12" style="text-align: right;">
+                
+                    
+                    <span class="badge tag-badge">speech-driven</span>
+                    
+                    <span class="badge tag-badge">facial-animation</span>
+                    
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div>
+        <div class="serif main-content">
+            <h3 id="post-front-matter">Abstract</h3>
+            <p style="text-align: justify;">In this paper we present an efficient algorithm that generates lip-synchronized facial animation from a given vocal audio clip. By combining spectral-dimensional bidirectional long short-term memory and temporal attention mechanism, we design a light-weight speech encoder that learns useful and robust vocal features from the input audio without resorting to pre-trained speech recognition modules or large training data. To learn subject-independent facial motion, we use deformation gradients as the internal representation, which allows nuanced local motions to be better synthesized than using vertex offsets. Compared with state-of-the-art automatic-speech-recognition-based methods, our model is much smaller but achieves similar robustness and quality most of the time, and noticeably better results in certain challenging cases.</p>
+        </div>
+    </div>
+
+    
+    <div>
+        <div class="serif main-content">
+            <img src="featured.png" width="100%"/>
+<h3 id="supplementary-video">Supplementary Video</h3>
+<video controls preload="auto" width="100%"  playsinline class="html-video">
+    <source src="/sdfa/sdfa_video.mp4" type="video/mp4">
+  <span>Your browser doesn't support embedded videos, but don't worry, you can <a href="/sdfa/sdfa_video.mp4">download it</a> and watch it with your favorite video player!</span>
+</video>
+<h3 id="citation">Citation</h3>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bibtex" data-lang="bibtex"><span style="display:flex;"><span><span style="color:#75af00">@article</span><span style="color:#111">{</span><span style="color:#111">chai2022speech</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75af00">title</span><span style="color:#111">=</span><span style="color:#d88200">{Speech-driven facial animation with spectral gathering and temporal attention}</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75af00">author</span><span style="color:#111">=</span><span style="color:#d88200">{Chai, Yujin and Weng, Yanlin and Wang, Lvdi and Zhou, Kun}</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75af00">journal</span><span style="color:#111">=</span><span style="color:#d88200">{Frontiers of Computer Science}</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75af00">volume</span><span style="color:#111">=</span><span style="color:#d88200">{16}</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75af00">number</span><span style="color:#111">=</span><span style="color:#d88200">{3}</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75af00">pages</span><span style="color:#111">=</span><span style="color:#d88200">{1--10}</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75af00">year</span><span style="color:#111">=</span><span style="color:#d88200">{2022}</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75af00">publisher</span><span style="color:#111">=</span><span style="color:#d88200">{Springer}</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div>
+        </div>
+    </div>
+
+</div>
+
+
+        </div><div class="container">
+    <div class="row justify-content-between">
+        <div class="col-sm-4">
+            <p class="footer">Yujin Chai © 2023 </p>
+        </div>
+        <div class="col-sm-6 d-flex flex-row-reverse">
+            
+            <a class="footer-social px-2"  href="https://github.com/chaiyujin" target="_blank"><i class="fab fa-github"></i></a>
+            
+        </div>
+    </div>
+</div>
+<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script src="/js/isotope.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="/js/dark.js"></script>
+<script src="/js/isotope.js"></script>
+<script src="/js/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script></body>
+</html>
