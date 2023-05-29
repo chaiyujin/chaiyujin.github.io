@@ -1,0 +1,64 @@
+baseURL = 'https://chaiyujin.github.io/'
+languageCode = 'en-us'
+title = "CYJ's Blog"
+copyright = "Yujin Chai ©"
+theme = ["hugo-video"]
+
+[params]
+  name = "Yujin Chai"
+  description = "I'm studying for a Ph.D. degree @Zhejiang Univeristy. My main research projects are about 'Speech-Driven Facial Animation'. I'm also interested in 3D face reconstruction, image generation, text-to-speech, and deep-learning models."
+  initials = "fa fa-home"
+  googleAnalytics = ""
+
+  [[params.social]]
+    name = "Github"
+    link = "https://github.com/chaiyujin"
+    icon = "fab fa-github"
+
+
+[menu]
+  [[menu.main]]
+    name = "Research Projects"
+    url = "/projects/"
+    weight = 1
+  [[menu.main]]
+    name = "Blogs"
+    url = "/garden/"
+    weight = 2
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+
+[taxonomies]
+  garden_tags = 'garden_tags'
+  project_tags = 'project_tags'
+  library_tags = 'library_tags'
+
+
+[markup]
+  defaultMarkdownHandler = 'goldmark'
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.goldmark.extensions]
+    definitionList = true
+    footnote = true
+    linkify = true
+    strikethrough = true
+    table = true
+    taskList = true
+    typographer = true
+  [markup.highlight]
+    # Choose from https://xyproto.github.io/splash/docs/all.html
+  
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    tabWidth = 2 
+    # style = "github"
+    style = 'monokailight'

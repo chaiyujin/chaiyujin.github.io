@@ -1,0 +1,51 @@
+{{ .Scratch.Set "project_tags_list" ""}}
+{{ range .Params.project_tags }}
+    {{ $.Scratch.Add "project_tags_list" ( . | printf " js-iso-%s") }}
+{{ end }}
+<div class='col {{ $.Scratch.Get "project_tags_list" }}'>
+    <div class="card top-highlight">
+        {{ $img := (.Resources.ByType "image").GetMatch "*featured*" }}
+        {{ if $img }}
+        {{ $img = $img.Fit "500x500" }}
+        {{ with $img }}
+        <img src="{{ .Permalink }}" alt="{{ $.Title }}" height="150" style="object-fit: contain;">
+        {{ end }}
+        {{ end }}
+        <div class="card-body">
+            <h5 class="card-title">
+                {{ $dateFormat := .Site.Params.dateFormat | default "2006" }}
+                {{ with .Date }}
+                    [{{ .Format $dateFormat }}]
+                {{ end }}
+                {{ .Title }}
+            </h5>
+
+            <p class="card-author serif">
+            {{ with .Params.authors }}
+            {{ range sort . "weight" }}
+            {{ if not .last }}
+            <span class="{{ if .me }}me{{ end }}">{{ .name }}</span><span>, </span>
+            {{ else }}
+            and <span class="{{ if .me }}me{{ end }}">{{ .name }}</span>
+            {{ end }}
+            {{ end }}
+            {{ end }}
+            </p>
+
+            <a href="{{ .Permalink }}" class="stretched-link"></a>
+            <div class="justify-content-between">
+                <div class="align-self-start">
+                {{ with .Params.project_tags }}
+                {{ range . }}
+                <span class="badge tag-badge">{{ . }}</span>
+                {{ end }}
+                {{ end }}
+                </div>
+                <!-- <div class="col align-self-end" style="text-align: right">
+                    {{ partial "status.html" . }}
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+{{ .Scratch.Delete "project_tags_list" }}
